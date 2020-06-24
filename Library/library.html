@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<style>
+    .divChildsBig{
+        background-color: blue;
+    }    
+</style>
+</head>
+<body>
+<div class='container'>
+    <div class='col-9' id="booksBox">
+        
+    </div>
+    <div class='col-3' id='helpSide'>
+        
+    </div>
+</div>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+let myLibrary = [
+    {
+        id: 1,
+        name: 'Mateusz Tarasewicz',
+        title: 'Sila umyslu',
+        page: 52,
+        read: true
+    },
+    {
+        id: 2,
+        name : 'Mati Tarasiu',
+        title : 'Przeszywajace uderzenie',
+        page : 75,
+        read : false
+    },
+    {
+        id : 3,
+        name : 'Tausiun Matusz',
+        title : 'Kulinarna zagwostka',
+        page : 12,
+        read : true
+    },
+];
+
+function Book(myLibrary) {
+    
+    myLibrary.forEach(x => {
+        let 
+        
+    });
+}
+function createTemplate(){
+    const bookBox = document.querySelector('#booksBox');
+    let div = bookBox.createElement('div').classList.add('col-12 bookDiv');
+        let divChild = document.querySelector('.bookDiv');
+        let divChildsSmall = document.querySelector('.bookDiv');
+        let divChildsBig = bookBox.createElement('div').createElement('div');
+        
+        divChildsBig.classList.add('col-3 divChildsBig');
+}
+
+    
+function addBookToLibrary(name, title, page, read) {
+    let index = myLibrary.length+1;
+    myLibrary.push({id : index,name: name, title : title, page : page, read : read});
+}
+</script>
+</body>
+</html>
